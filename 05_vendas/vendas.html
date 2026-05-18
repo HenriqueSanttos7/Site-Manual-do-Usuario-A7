@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Módulo de Vendas - A7 Gestão</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-custom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html" style="color: var(--primary-blue)"> 
+          <i class="fa-solid fa-arrow-left me-2"></i> Voltar ao Menu Principal 
+        </a>
+      </div>
+    </nav>
+
+    <main class="container my-5">
+      <div class="text-center mb-5">
+        <span class="display-4 text-primary"><i class="fa-solid fa-shop mb-3"></i></span>
+        <h1 class="fw-bold">Módulo Operacional de Vendas</h1>
+        <p class="lead text-muted">Selecione a rotina comercial que deseja consultar as instruções:</p>
+      </div>
+
+      <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
+        <div class="col">
+          <a href="pdv/vendapdv.html" class="topic-card">
+            <span class="topic-icon"><i class="fa-solid fa-cash-register"></i></span>
+            <h4>PDV (Checkout)</h4>
+            <p class="text-muted">Instruções para abertura de caixa, registro ágil de itens, tratamento de balanças e recebimento em dinheiro/cartão.</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="expedicao/expedicao.html" class="topic-card">
+            <span class="topic-icon"><i class="fa-solid fa-truck-ramp-box"></i></span>
+            <h4>Expedição</h4>
+            <p class="text-muted">Conferência de mercadorias lançadas, romaneios de entrega e validação de pacotes prontos para despacho.</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="05_vendas/nota_saida/nota_saida.html" class="topic-card">
+            <span class="topic-icon"><i class="fa-solid fa-file-invoice-dollar"></i></span>
+            <h4>Nota Fiscal de Saída</h4>
+            <p class="text-muted">Emissão de NF-e, parametrização de CFOP, correções de notas tributadas e cancelamentos regulamentares.</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="05_vendas/pre_venda/pre_venda.html" class="topic-card">
+            <span class="topic-icon"><i class="fa-solid fa-calculator"></i></span>
+            <h4>Pré-venda / Orçamento</h4>
+            <p class="text-muted">Montagem de propostas comerciais de balcão e conversão direta de orçamentos salvos em cupons no frente de caixa.</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="topic-card">
+            <span class="topic-icon"><i class="fa-solid fa-right-left"></i></span>
+            <h4>Troca e Devolução</h4>
+            <p class="text-muted">Procedimentos operacionais para retorno de itens vendidos, estorno de valores e emissão de notas de devolução.</p>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center border-top">
+      <div class="container">
+        <a href="https://wa.me/5592981826512" target="_blank" class="btn-wpp shadow-sm"> <i class="fa-brands fa-whatsapp fs-4 me-2"></i>Suporte no WhatsApp </a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

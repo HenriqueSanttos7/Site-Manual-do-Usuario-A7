@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manual A7 Gestão - Início</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-custom sticky-top">
+      <div class="container d-flex justify-content-between align-items-center">
+        <button class="btn border-0 p-0 me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral" style="color: var(--primary-blue); font-size: 1.5rem">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <a class="navbar-brand fw-bold m-0 me-auto d-flex align-items-center" href="index.html" style="color: var(--primary-blue)">
+          <img src="imagens/logos/a7_logo.png" alt="Logo A7 Gestão" height="40" class="me-2" />
+          A7 GESTÃO
+        </a>
+
+        <div class="d-none d-md-block">
+          <img src="imagens/logos/logo_siah.png" alt="SIAH Software" height="35" />
+        </div>
+      </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title fw-bold" id="menuLateralLabel" style="color: var(--primary-blue)"><i class="fa-solid fa-book-open me-2"></i>Menu do Manual</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <div class="list-group list-group-flush mb-auto">
+          <a href="index.html" class="list-group-item list-group-item-action fw-bold border-0 rounded mb-1" style="color: var(--primary-blue); background-color: rgba(15, 73, 166, 0.1)"> <i class="fa-solid fa-house me-2"></i> Início </a>
+          <a href="05_vendas.html" class="list-group-item list-group-item-action border-0 rounded mb-1"> <i class="fa-solid fa-shop me-2"></i> Vendas </a>
+          <a href="cadastros_arquivos/cadastro_clientes.html" class="list-group-item list-group-item-action border-0 rounded mb-1"> <i class="fa-solid fa-user-plus me-2"></i> Cadastro de Clientes </a>
+        </div>
+        <div class="text-center pt-4 border-top">
+          <p class="small text-muted mb-2">Desenvolvido por:</p>
+          <img src="imagens/logos/logo_siah.png" alt="SIAH Software" height="35" />
+        </div>
+      </div>
+    </div>
+
+    <main class="container my-5">
+      <div class="text-center mb-5 pb-3">
+        <h1 class="display-5 fw-bold">Manual do Usuário</h1>
+        <h2>A7 Gestão</h2>
+        <p class="lead text-muted text-center mb-4">Busque por rotinas, telas ou módulos do sistema.</p>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6 position-relative">
+            <div class="input-group input-group-lg shadow-sm" style="border-radius: 50px; overflow: hidden; border: 2px solid var(--border-color)">
+              <span class="input-group-text bg-white border-0 text-muted px-4">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <input type="text" id="inputBuscaGlobal" class="form-control border-0 px-1" placeholder="Ex: Caixa, Cliente, Nota Fiscal..." style="box-shadow: none" />
+              <button class="btn fw-bold px-4" style="background-color: var(--primary-blue); color: white" type="button">Buscar</button>
+            </div>
+
+            <div id="resultadosBusca" class="list-group position-absolute shadow-lg d-none mt-2" style="z-index: 1050; max-height: 300px; overflow-y: auto; left: 12px; right: 12px; border-radius: 12px"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="col-6">
+          <a href="sobre_a7/sobre_a7.html" class="topic-card">
+            <span class="topic-icon"><i class="fa-solid fa-circle-info"></i></span>
+            <h4>Sobre o A7</h4>
+            <p class="text-muted">Visão geral da plataforma, arquitetura do software e requisitos mínimos.</p>
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="01_arquivo/arquivos.html" class="topic-card">
+            <span class="topic-icon"><i class="fa-solid fa-folder-open"></i></span>
+            <h4>Arquivos de Cadastros</h4>
+            <p class="text-muted">Gerencie dados base do sistema como parametrizações gerais e tabelas essenciais.</p>
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="02_compras/compras.html" class="topic-card">
+            <span class="topic-icon"><i class="fa-solid fa-basket-shopping"></i></span>
+            <h4>Compras</h4>
+            <p class="text-muted">Entrada de notas fiscais, pedidos de compra e cotações de fornecedores.</p>
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="03_estoque/estoque.html" class="topic-card">
+            <span class="topic-icon"><i class="fa-solid fa-boxes-stacked"></i></span>
+            <h4>Estoque</h4>
+            <p class="text-muted">Controle de inventário, balanceamento de produtos e movimentações internas.</p>
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="04_producao/producao.html" class="topic-card">
+            <span class="topic-icon"><i class="fa-solid fa-industry"></i></span>
+            <h4>Produção</h4>
+            <p class="text-muted">Ordens de produção, composição de insumos e controle de produtos manufaturados.</p>
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="05_vendas/vendas.html" class="topic-card">
+            <span class="topic-icon"><i class="fa-solid fa-shop"></i></span>
+            <h4>Vendas</h4>
+            <p class="text-muted fw-semibold" style="color: var(--primary-blue)">Acesse rotinas operacionais: PDV Checkout, Expedição, Notas de Saída e mais.</p>
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="06_os/os.html" class="topic-card">
+            <span class="topic-icon"><i class="fa-solid fa-file-invoice"></i></span>
+            <h4>Ordem de Serviço</h4>
+            <p class="text-muted">Gestão de ordens, controle de mão de obra e aplicação técnica de peças.</p>
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="07_posto/posto.html" class="topic-card">
+            <span class="topic-icon"><i class="fa-solid fa-gas-pump"></i></span>
+            <h4>Posto</h4>
+            <p class="text-muted">Módulo exclusivo para gerenciamento de pistas de combustíveis e bicos integrados.</p>
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="08_financeiro/financeiro.html" class="topic-card">
+            <span class="topic-icon"><i class="fa-solid fa-calculator"></i></span>
+            <h4>Financeiro</h4>
+            <p class="text-muted">Fluxo de caixa, contas a pagar/receber, conciliação e emissão de boletos.</p>
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="11_consultas/consultas.html" class="topic-card">
+            <span class="topic-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></span>
+            <h4>Consultas</h4>
+            <p class="text-muted">Auditoria de logs rápidos de movimentação, históricos de transações e buscas ágeis.</p>
+          </a>
+        </div>
+        <div class="col text-center mx-auto col-md-12 col-lg-4">
+          <a href="12_relatorios/relatorios.html" class="topic-card">
+            <span class="topic-icon"><i class="fa-solid fa-chart-line"></i></span>
+            <h4>Relatórios</h4>
+            <p class="text-muted">Exportação de balancetes econômicos, estatísticas gerenciais e fechamentos fiscais.</p>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <button id="btnBackToTop" class="btn-back-to-top" title="Voltar ao Topo">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <footer class="text-center border-top">
+      <div class="container">
+        <h3 class="fw-bold mb-4">Dúvidas Técnicas?</h3>
+        <a href="https://wa.me/5592981826512" target="_blank" class="btn-wpp shadow-sm"> <i class="fa-brands fa-whatsapp fs-4 me-2"></i>Chamar no WhatsApp </a>
+        <p class="mt-4 text-muted small">© 2026 SIAH Software e Serviços</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

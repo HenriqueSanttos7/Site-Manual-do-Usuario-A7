@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manual A7 - Venda PDV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-custom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html" style="color: var(--primary-blue)"> <i class="fa-solid fa-arrow-left me-2"></i> Voltar ao Início </a>
+      </div>
+    </nav>
+
+    <main class="container my-5">
+      <h1 class="mb-4">Realizando uma Venda no PDV Checkout</h1>
+
+      <div class="card p-4 border-0 shadow-sm mb-4">
+        <h4><span class="step-badge">1</span> Acesso e Autenticação</h4>
+        <p>Ao abrir o sistema A7 e selecionar o Banco de Dados, o sistema abrirá a tela de <strong> autenticação</strong> para garantir a segurança do acesso.</p>
+        <div class="caminho-container">
+          <div class="caminho-box"><i class="fa-solid fa-sitemap me-2"></i>Caminho: Área de Trabalho > A7 Gestão > Seleção de Banco de Dados</div>
+        </div>
+        <p class="mb-1">Preencha os campos abaixo:</p>
+
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <div class="media-box has-image">
+              <img src="../imagens/usuario.jpg" alt="Tela de Autenticação" class="img-fluid w-100" />
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue"> 1</span>
+                <span class="field-label"> <strong class="text-blue"> Usuário: </strong></span>
+                Digite seu <strong> nome de usuário </strong> para acessar o sistema, previamente cadastrado pelo administrador do sistema. (Ex: HENRIQUE)
+              </li>
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-red"> 2</span>
+                <span class="field-label"> <strong class="text-red"> Senha: </strong></span>
+                Digite sua senha para acessar o sistema.
+              </li>
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-green"> 3</span>
+                <span class="field-label"> <strong class="text-green">Emp./Dep.: </strong></span>
+                Selecione a <strong> Empresa ou Depósito</strong> em que o usuário está vinculado (Ex: 001 - SIAH).
+              </li>
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-orange"> 4</span>
+                <span class="field-label"> <strong class="text-orange"> <i class="fa-regular fa-square-check me-1"></i> Lembrar usuário: </strong></span>
+                Certifique-se de que a option esteja marcada para
+                <strong> agilizar futuros acessos </strong> ao sistema.
+              </li>
+              <li class="list-group-item bg-transparent border-0 mt-2">
+                <span class="field-label"> Clique em <strong> OK </strong> para entrar. </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm mb-4">
+        <h4><span class="step-badge">2</span> Abrir Caixa de Recebimento (PDV Checkout)</h4>
+        <p>Para a abertura de caixa e início das vendas, clique em PDV Checkout</p>
+
+        <div class="caminho-container">
+          <div class="caminho-box"><i class="fa-solid fa-sitemap me-2"></i>Caminho: Vendas > PDV Checkout</div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <div class="media-box has-image">
+              <img src="../imagens/abrir_pdv.jpg" alt="Tela de Autenticação" class="img-fluid w-100" />
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue">1</span>
+                <span class="field-label"> <strong class="text-blue">Vendas: </strong></span>
+                Botão Vendas no menu lateral do sistema A7, onde estão concentradas as <strong>rotinas de vendas e emissão de documentos fiscais.</strong>
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue"> 2</span>
+                <span class="field-label"> <strong class="text-blue"> PDV (Checkout): </strong></span>
+                Botão <strong>PDV Checkout</strong>, onde é possível realizar a <strong>abertura do caixa e processar as vendas.</strong> O PDV (Ponto de Venda) é a interface utilizada para registrar as vendas, emitir cupons fiscais e gerenciar o caixa.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm mb-4">
+        <h4><span class="step-badge">3</span> Abertura > Autenticação de Usuário</h4>
+        <p>Para iniciar a abertura do caixa, é necessário autenticar-se no sistema.</p>
+
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <div class="media-box has-image">
+              <img src="../imagens/abertura_caixa.jpg" alt="Tela de Autenticação" class="img-fluid w-100" />
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-red"> 1</span>
+                <span class="field-label"> <strong class="text-red"> Usuário: </strong></span>
+                Digite o <strong> nome do Usuário </strong> que será responsável pela operação do caixa. (Ex: HENRIQUE).
+              </li>
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-purple"> 2</span>
+                <span class="field-label"> <strong class="text-purple"> Senha: </strong></span>
+                Digite sua senha para acessar o sistema.
+              </li>
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-green"> 3</span>
+                <span class="field-label"> <strong class="text-green"> Ctrl+E Menu Fiscal </strong></span>
+                Atalho do teclado <kbd>Ctrl+E</kbd> para acessar o Menu Fiscal.
+                <div class="nota-container">
+                  <div class="nota-box">
+                    <i class="fa-solid fa-info-circle me-2"></i>
+                    <strong> Menu Fiscal: </strong> Esta interface concentra as rotinas de conformidade fiscal exigidas pela legislação do PAF-ECF. Ela permite a geração de relatórios e arquivos digitais que detalham o movimento econômico e fiscal do checkout.
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue"> 4</span>
+                Clique em
+                <span class="field-label"> <strong class="text-blue"> Próxima > </strong></span>
+                para seguir para próxima tela, de
+                <strong> Saldo Inicial</strong> de Caixa.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm mb-4">
+        <h4><span class="step-badge">4</span> Saldo Inicial do Caixa</h4>
+        <p>
+          Nesse campo digite o Saldo Inicial para abertura do caixa. Este saldo é o <strong> valor em dinheiro inserido na gaveta do checkout </strong> no início do expediente ou de um novo turno.
+        </p>
+
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <div class="media-box has-image">
+              <img src="../imagens/abertura_caixa_saldo.jpg" alt="Tela de Autenticação" class="img-fluid w-100" />
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <ul class="list-group list-group-flush mt-3">
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-red"> 1</span>
+                <span class="field-label"> <strong class="text-red"> Saldo Inicial: </strong></span>
+                Nesse campo digite o Saldo Inicial para abertura do caixa. Este saldo é o <strong> valor em dinheiro inserido na gaveta do checkout </strong> no início do expediente ou de um novo turno.
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue"> 2</span>
+                <span class="field-label"> <strong class="text-blue"> OK: </strong></span>
+                Clique em <strong>OK</strong> para continuar, e em seguida em <strong>Sim</strong> para <strong> confirmar a abertura do caixa</strong>. O sistema exibirá a tela principal do PDV Checkout, onde as vendas poderão ser realizadas.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm mb-4">
+        <h4><span class="step-badge">5</span> PDV - Ponto de Venda (Caixa Livre)</h4>
+        <p>Esta é a tela principal do PDV Checkout, onde as vendas poderão ser realizadas. A seguir explicaremos os principais elements da interface:</p>
+
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <div class="media-box has-image">
+              <img src="../imagens/pdv_caixalivre.png" alt="Tela de Autenticação" class="img-fluid w-100" />
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue">1</span>
+                <span class="field-label"><strong class="text-blue">OPERADOR(A):</strong></span>
+                Exibe o <strong>nome do funcionário</strong> que abriu e é responsável por este caixa (HENRIQUE no exemplo)
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue">2</span>
+                <span class="field-label"><strong class="text-blue">CAIXA:</strong></span>
+                Número de <strong>identificação</strong> do caixa (Ex: 002626).
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-red">3</span>
+                <span class="field-label"><strong class="text-red">DATA / HORA:</strong></span>
+                <strong>Data e hora atuais</strong> da operação do caixa.
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-purple">4</span>
+                <span class="field-label"><strong class="text-purple">VENDEDOR / CLIENTE / ITEM:</strong></span>
+                Campo para digitar o <strong>código único</strong> ou <strong>CPF/CNPJ</strong> do cliente. E também para digitar o <strong>código do vendedor</strong> e o <strong>código do item</strong> a ser vendido.
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue">5</span>
+                <span class="field-label"><strong class="text-blue">DESCRIÇÃO:</strong></span>
+                Exibe o nome ou a <strong>descrição do item</strong> que está sendo lançado.
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-orange">6</span>
+                <span class="field-label"><strong class="text-orange">QUANTIDADE / PESO KG:</strong></span>
+                Campo para digitar a quantidade ou o peso do item a ser vendido (o padrão é 1,000).
+                <div class="nota-container">
+                  <div class="nota-box">
+                    <i class="fa-solid fa-info-circle me-2"></i>
+                    <strong> Peso: </strong> Para itens pesados, deve-se fazer a configuração da balança no sistema. Consulte o Suporte ou o TI de sua empresa.
+                  </div>
+                </div>
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue">7</span>
+                <span class="field-label"><strong class="text-blue">SUBTOTAL:</strong></span>
+                Exibe o <strong>valor total da venda</strong> atual, somando o valor de todos os itens lançados.
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-green">8</span>
+                <span class="field-label"><strong class="text-green">RECEBIDO / TROCO:</strong></span>
+                Exibe o <strong>valor total em dinheiro</strong> ou outras formas de pagamento que o cliente entregou. E em seguida exibe o <strong>valor do troco</strong> a ser devolvido ao cliente, calculado automaticamente com base no valor recebido e no subtotal da venda.
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <div class="nota-container">
+                  <div class="nota-box">
+                    <i class="fa-solid fa-info-circle me-2"></i>
+                    <strong> F1 Atalhos: </strong> A tecla de atalho <kbd>F1</kbd> exibe uma lista de atalhos de teclado disponíveis para agilizar as operações no PDV Checkout. Esses atalhos permitem acessar rapidamente funções como <strong>pesquisa de produtos</strong>, <strong>finalização de vendas, abertura de caixa,</strong> entre outras, otimizando o tempo e a eficiência do operador.
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm mb-4">
+        <h4><span class="step-badge">6</span>Definir o Vendedor</h4>
+
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <div class="media-box has-image">
+              <img src="../imagens/definir_vendedor.jpg" alt="Tela de Autenticação" class="img-fluid w-100" />
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue"> 1</span>
+                <span class="field-label"> <strong class="text-blue"> Vendedor: </strong></span>
+                Digite nesse campo o
+                <strong><strong>código único</strong> do Vendedor</strong>, e em seguida <strong>ENTER</strong> no teclado. (Exemplo: 39)
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue"> 2</span>
+                <span class="field-label"> <strong class="text-blue"> Pesquisa de Vendedores [F2]: </strong></span>
+                Alternativamente, é possível
+                <strong>pesquisar pelo código único ou nome </strong> do vendedor, através do atalho <kbd>F2</kbd>. Digite o ínicio do nome do vendedor ou o código e pressione <kbd>ENTER</kbd>. O sistema localizará o vendedor correspondente, caso esteja cadastrado.
+                <strong>
+                  <a href="../cadastros_arquivos/consulta_vendedores.html" target="_blank"> Pesquisa de Vendedores </a>
+                </strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm mb-4">
+        <h4><span class="step-badge">7</span>Definir o Cliente</h4>
+
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <div class="media-box has-image">
+              <img src="../imagens/definir_cliente.jpg" alt="Tela de Autenticação" class="img-fluid w-100" />
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue"> 1</span>
+                <span class="field-label"> <strong class="text-blue"> Cliente: </strong></span>
+                Digite nesse campo o
+                <strong><strong>código único</strong> do Cliente</strong>, e em seguida <strong>ENTER</strong> no teclado. (Exemplo: 8442)
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue"> 2</span>
+                <span class="field-label"> <strong class="text-blue"> Pesquisa de Clientes [F2]: </strong></span>
+                Alternativamente, é possível
+                <strong>pesquisar pelo CPF ou CNPJ </strong> do cliente, através do atalho <kbd>F2</kbd>. Digite o nome do cliente ou CPF/CNPJ e pressione <kbd>ENTER</kbd>. O sistema localizará o cliente correspondente, caso esteja cadastrado.
+                <strong>
+                  <a href="../cadastros_arquivos/consulta_clientes.html" target="_blank"> Pesquisa de Clientes </a>
+                </strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm mb-4">
+        <h4><span class="step-badge">8</span>Iniciando uma Venda > Código de Barras</h4>
+        <p>Agora que os dados do vendedor e do cliente estão definidos, você pode iniciar a venda, listando os produtos.</p>
+
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <div class="media-box has-image">
+              <img src="../imagens/codigo_de_barras.jpg" alt="Tela de Autenticação" class="img-fluid w-100" />
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue"> 1</span>
+                <span class="field-label"> <strong class="text-blue"> Código de Barras: </strong></span>
+                <span class="field-description"> No campo <strong>Código Barras</strong>, bipe o produto com um <strong class="text-blue">leitor de código de barras</strong>, considerando que o produto já esteja cadastrado no sistema.</span>
+                O sistema irá reconhecer o produto e lançá-lo na venda, exibindo a
+                <strong>descrição, quantidade, valor unitário e subtotal</strong>.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm mb-4">
+        <h4><span class="step-badge">9</span> Pesquisa de Itens</h4>
+        <p>Nesta seção, você pode pesquisar por itens cadastrados no sistema, através do atalho <kbd>F5</kbd>.</p>
+
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <div class="media-box has-image">
+              <img src="../imagens/pesquisa_itens.jpg" alt="Tela de Autenticação" class="img-fluid w-100" />
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-red"> 1</span>
+                <span class="field-label"> <strong class="text-red"> Filtros de Pesquisa: </strong></span>
+                Use os filtros de pesquisa disponíveis para buscar um produto. No exemplo, buscamos pelo nome “BISC” para listar itens com essa
+                <strong>descrição.</strong> Você pode pesquisar também por <strong>código do produto, código de barras, modelo ou referência.</strong>.
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue"> 2</span>
+                <span class="field-label"> <strong class="text-blue"> Selecionar Item: </strong></span>
+                Ao escolher o item, clique em <strong>OK</strong> ou pressione <kbd>ENTER</kbd> para lançá-lo na venda. O sistema exibirá o item na lista de produtos da venda, com a <strong>descrição, quantidade, valor unitário e subtotal.</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm mb-4">
+        <h4><span class="step-badge">10</span> Produtos Similares</h4>
+        <p>Se o produto for em quantidade, exemplo: <strong class="text-blue">02 BISCOITOS</strong>, antes de bipar ou pesquisar o produto, <kbd>Digite *2</kbd> para <strong>2 produtos</strong>. E pressione <kbd>ENTER</kbd> para confirmar. O campo <strong>QUANTIDADE/PESO KG</strong> deve mudar de 1,000 para 2,000.</p>
+
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <div class="media-box has-image">
+              <img src="../imagens/itens_similares.jpg" alt="Tela de Autenticação" class="img-fluid w-100" />
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue"> 1</span>
+                <span class="field-label"> <strong class="text-blue"> Código de Barras: </strong></span>
+                Após definir a quantidade do produto, você pode <strong>bipeá-lo</strong> normalmente com o leitor de código de barras, ou <strong>pesquisar pelo nome do produto</strong>. O sistema irá reconhecer a quantidade definida e lançará a venda considerando essa quantidade. Exemplo: <strong class="text-blue">02 BISCOITOS.</strong>
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue"> 2</span>
+                <span class="field-label"> <strong class="text-blue"> Peso KG: </strong></span>
+                O mesmo acontece para produtos que são pesados na balança. Exemplo: <strong class="text-blue">100 GRAMAS DE PÃO. </strong> Ao pesar o produto, o campo <strong>QUANTIDADE/PESO KG</strong> deve ser preenchido com o peso do produto, por exemplo: <strong>0,100 kg.</strong> E em seguida, o sistema lançará a venda considerando a quantidade ou peso definido.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm mb-4">
+        <h4><span class="step-badge">11</span> Pagamento > Cartão </h4>
+        <p> Após adicionado todos os produtos, pressione o atalho <kbd>F7</kbd> para <strong> avançar </strong> para a próxima etapa, a <strong class="text-blue">tela de pagamento</strong>, como mostrar a tela a seguir: </p>
+
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <div class="media-box has-image">
+              <img src="../imagens/tipo_cartaodecredito.jpg" alt="Tela de Autenticação" class="img-fluid w-100" />
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue">1</span>
+                <span class="field-label"> <strong class="text-blue"> Pagamento no cartão: </strong></span>
+                Definir o tipo de pagamento, como <strong>dinheiro, cartão de crédito, débito</strong> ou outras formas de pagamento disponíveis.
+
+                <div class="nota-container">
+                  <div class="nota-box">
+                    <i class="fa-solid fa-info-circle me-2"></i>
+                    <strong> Pagamentos em máquinas de cartão: </strong> O sistema A7 é compatível com as principais máquinas de cartão do mercado. Para processar pagamentos com cartão, é necessário configurar a integração da máquina de cartão com o sistema A7. Consulte o Suporte ou o TI de sua empresa para realizar essa configuração.
+                  </div>
+                </div>
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue">2</span>
+                <span class="field-label"> <strong class="text-blue"> Definir Condição de Pagamento: </strong></span>
+                Definir a condição de pagamento, como <strong>1X, 2X, 3X</strong>, etc. para pagamentos com cartão de crédito. Para pagamentos em dinheiro, a condição de pagamento geralmente é <strong>1X</strong>.
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                No exemplo temos: <strong class="text-blue">CARTÃO CRÉDITO</strong> na condição de pagamento em <strong class="text-blue">3X</strong> (Parcelado em 3 vezes).
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue">3</span>
+                <span class="field-label"> <strong class="text-blue"> Recebimento do Pagamento: </strong></span>
+                Receba o pagamento e pressione <kbd>ENTER</kbd> para finalizar a venda. O sistema irá processar o pagamento, gerar o <strong class="text-blue">cupom fiscal de venda</strong> e atualizar o estoque dos produtos vendidos.
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm mb-4">
+        <h4><span class="step-badge">12</span> Pagamento > Dinheiro </h4>
+        <p> Após adicionado todos os produtos, pressione o atalho <kbd>F7</kbd> para <strong> avançar </strong> para a próxima etapa, a <strong class="text-blue">tela de pagamento</strong>, como mostrar a tela a seguir: </p>
+
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <div class="media-box has-image">
+              <img src="../imagens/tipo_dinheiro.jpg" alt="pagamento em dinheiro" class="img-fluid w-100" />
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue">1</span>
+                <span class="field-label"> <strong class="text-blue"> Pagamento em Dinheiro: </strong></span>
+                Definir o tipo de pagamento, como <strong>dinheiro, cartão de crédito, débito</strong> ou outras formas de pagamento disponíveis.
+              </li>
+      
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue">2</span>
+                <span class="field-label"> <strong class="text-blue"> Condição de Pagamento: </strong></span>
+                Em caso de pagamento em <strong>DINHEIRO</strong>, por padrão a condição de pagamento é <strong>1X</strong>, ou seja, o cliente paga o valor total da venda em uma única parcela.
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue">3</span>
+                <span class="field-label"> <strong class="text-blue"> Dinheiro Recebido / Troco: </strong></span>
+                Neste caso, após selecionar <strong>pagamento em Dinheiro 1X</strong>, você deve digitar no campo <strong>DINHEIRO</strong>, o valor inteiro que você está recebendo, para assim o sistema calcular o <strong>TROCO</strong>, se houver.
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue">4</span>
+                <span class="field-label"> <strong class="text-blue"> Finalizar Venda: </strong></span>
+                Receba o pagamento e pressione <kbd>ENTER</kbd> para finalizar a venda. O sistema irá processar o pagamento, gerar o <strong class="text-blue">cupom fiscal de venda</strong> e atualizar o estoque dos produtos vendidos.
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm mb-4">
+        <h4><span class="step-badge">13</span>Finalização > Dados Adicionais</h4>
+        <p>Ao final da venda, surgirá uma tela OPCIONAL para <strong>dados adicionais</strong>. Preencha com a chegada do cliente e o prestador do serviço.</p>
+
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <div class="media-box has-image">
+              <img src="../imagens/dados_adicionais.jpg" alt="Cupom Fiscal" class="img-fluid w-100" />
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-blue">1</span>
+                <span class="field-label"> <strong class="text-blue"> Chegada Cliente: </strong></span>
+                Digite a <strong>chegada na loja no cupom fiscal</strong>. Este campo é opcional, mas pode ser útil para <strong>controle de fluxo de clientes e análise de vendas</strong>. (Ex: Marketing, Instagram, Indicação, etc.)
+              </li>
+
+              <li class="list-group-item bg-transparent border-0">
+                <span class="field-number bg-purple">2</span>
+                <span class="field-label"> <strong class="text-purple"> Prestador do Serviço: </strong></span>
+                Digite o nome do <strong>prestador do serviço</strong>. Este campo é opcional, mas pode ser útil para <strong>identificar o funcionário responsável pela venda</strong> ou para fins de controle interno. (Ex: HENRIQUE, JOSÉ, etc.)
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm mb-4">
+        <h4><span class="step-badge">14</span> Finalização > Cupom Fiscal</h4>
+        <p> A venda será finalizada após a <strong>confirmação do pagamento</strong>. O sistema irá gerar o comprovante de venda e atualizar o estoque dos produtos vendidos.</p>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm mb-4">
+        <h4><span class="step-badge">15</span> Venda Finalizada</h4>
+        <p> A venda será finalizada após a <strong>confirmação do pagamento</strong>. O sistema irá gerar o comprovante de venda e atualizar o estoque dos produtos vendidos.</p>
+      </div>
+
+    </main>
+
+    <footer class="text-center">
+      <div class="container">
+        <a href="https://wa.me/5592981826512" target="_blank" class="btn-wpp"> <i class="fa-brands fa-whatsapp me-2"></i>Suporte no WhatsApp </a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>
